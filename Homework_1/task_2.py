@@ -6,14 +6,13 @@
 # 123 -> 6 (1 + 2 + 3)
 # 100 -> 1 (1 + 0 + 0)
 
-n = int(input("Введите трехзначное число: "))
+number = int(input("Введите трехзначное число: "))
 
-num1 = n % 10
-n = n // 10
-num2 = n % 10
-n = n // 10
-sum = n + num1 + num2
+n = number
+summa = 0
+while n > 0:
+    num = n % 10
+    summa += num
+    n = n // 10
 
-print(f"Сумма цифр числа: {sum}")
-
-
+print(f"Сумма цифр числа {number} равна {summa}")
