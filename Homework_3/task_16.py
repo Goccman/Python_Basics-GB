@@ -26,7 +26,7 @@ def is_number(string):
             is_number(input("Введите число: "))
 
 
-n = is_number(input("Введите количество элементов в массиве: "))
+n = int(is_number(input("Введите количество элементов в массиве: ")))
 nums_list = [randint(1, n) for _ in range(n)]
 print(*nums_list)
 num = int(input('Введите искомое число: '))
