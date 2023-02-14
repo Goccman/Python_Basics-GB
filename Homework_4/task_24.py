@@ -26,3 +26,4 @@ for i in range(len(berry_num)):
         total_berries = berry_num[i - 1] + berry_num[i] + berry_num[i + 1]
     max_berries = total_berries if total_berries > max_berries else max_berries
 print(max_berries)
+
