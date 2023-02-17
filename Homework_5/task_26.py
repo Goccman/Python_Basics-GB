@@ -20,7 +20,7 @@ def is_number(string):
             return string
         except ValueError:
             print("Ввели не число!")
-            is_number(input("Введите число: "))
+            return is_number(input("Введите число: "))
 
 
 def a_pow_b(a, b):

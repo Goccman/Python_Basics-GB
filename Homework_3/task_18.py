@@ -24,7 +24,7 @@ def is_number(string):
             return string
         except ValueError:
             print("Ввели не число!")
-            is_number(input("Введите число: "))
+            return is_number(input("Введите число: "))
 
 
 n = int(is_number(input("Введите количество элементов в массиве: ")))
