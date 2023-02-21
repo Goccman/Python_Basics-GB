@@ -11,13 +11,11 @@ A = 2; B = 3 -> 8
 # поверка на число
 def is_number(string):
     if string.isdigit():
-        string = int(string)
-        return string
+        return int(string)
     else:
         try:
             float(string)
-            string = float(string)
-            return string
+            return float(string)
         except ValueError:
             print("Ввели не число!")
             return is_number(input("Введите число: "))
